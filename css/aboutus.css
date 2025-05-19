@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Arima:wght@100..700&family=Arizonia&family=Bebas+Neue&family=Birthstone+Bounce:wght@400;500&family=Charmonman:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ribeye+Marrow&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Water+Brush&display=swap");
+
+/*  font-family: "Inter", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #187cff;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* footer */
+
+.footer {
+  background-color: #fff;
+  color: #000;
+  padding: 60px 0px 0px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer .footer-logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.footer .footer-section h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  background: #000;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #000;
+}
+
+.subscribe-input {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.subscribe-btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .app-download img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+}
+/* ban */
+.top-bar {
+  font-size: 14px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.social-icons i {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.btn-outline-light {
+  border-radius: 8px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.bg-overlay {
+  /* background: rgba(0, 0, 0, 0.4); */
+  padding: 10px 0;
+}
+.main {
+  position: relative;
+  background: url("../images/blog-ban.png") center center / cover no-repeat;
+  min-height: 400px;
+  height: auto;
+  color: white;
+  z-index: 1;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(
+    6,
+    48,
+    83,
+    0.58
+  ); /* Solid overlay (black with 50% opacity) */
+  z-index: -1;
+}
+/* main */
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #e9f2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  .card-title {
+    font-weight: 600;
+  }
+  /* top-notch */
+  .image-stack img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .check-icon {
+    color: #007bff;
+    margin-right: 10px;
+  }
+  .top-bar{
+    font-size: 14px;
+  padding-top: 27px !important;
+  padding-bottom: 27px !important;
+  }
+  .nav-bar {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+.nav-link {
+  padding-right: 30px !important;
+  padding-left: 20px;
+  font-size: 14px !important;
+}
+.person {
+  border-radius: 50px !important;
+  border: 1px solid black !important;
+}
+/* footer */
+.footer {
+  background-color: #fff;
+  color: #000;
+  padding-top: 60px;
+  font-family: 'Segoe UI', sans-serif;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.footer .footer-logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+.footer-logo{
+  max-width: 170px;
+  width: 100%;
+}
+
+.footer .footer-section h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  background: #000;
+  color: #fff;
+  padding: 15px 0px ;
+  font-size: 14px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #000;
+}
+.foot-para{
+  margin-bottom: 30px !important;
+}
+
+.subscribe-input {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.subscribe-btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.app-logo{
+  max-width: 172px !important;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .foot-play img {
+    max-width: 120px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .foot-app img {
+    max-width: 120px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px !important;
+  }
+  .help-contact{
+    margin-bottom: 30px;
+  }
+  .trusted-logos img{
+    max-width: 95px;
+    width: 100%;
+    max-height: 40px;
+  }
+  
+}
+.main-content{
+  padding-top: 50px !important;
+}
+.check-icon {
+  color: #0066ff;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: var(--primary);
+}
+.foot-logo img{
+
+max-width: 82px !important;
+/* height: 35px; */
+  width: 100%;}
+

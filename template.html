@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./bootstrap/bootstrap-5.3.5-dist/css/bootstrap.min.css"
+    />
+
+    <!-- font-awsome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/blog.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Arima:wght@100..700&family=Arizonia&family=Bebas+Neue&family=Birthstone+Bounce:wght@400;500&family=Charmonman:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ribeye+Marrow&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Water+Brush&display=swap");
+
+      /*  font-family: "Inter", sans-serif; */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary: #187cff;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* footer */
+
+      .footer {
+        background-color: #fff;
+        color: #000;
+        padding: 60px 0px 0px;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .footer .footer-logo {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      .footer .footer-section h5 {
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .footer-bottom {
+        background: #000;
+        color: #fff;
+        padding: 15px 20px;
+        font-size: 14px;
+      }
+
+      .footer a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      .social-icons a {
+        font-size: 18px;
+        margin-right: 10px;
+        color: #000;
+      }
+
+      .subscribe-input {
+        border-radius: 0.5rem 0 0 0.5rem;
+      }
+
+      .subscribe-btn {
+        border-radius: 0 0.5rem 0.5rem 0;
+      }
+
+      @media (max-width: 768px) {
+        .app-download img {
+          width: 120px;
+          margin-bottom: 10px;
+        }
+      }
+      /* ban */
+      .top-bar {
+        font-size: 14px;
+        background-color: transparent;
+        color: #fff;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .social-icons i {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 16px;
+      }
+
+      .btn-outline-light {
+        border-radius: 8px;
+      }
+
+      .logo span {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .bg-overlay {
+        /* background: rgba(0, 0, 0, 0.4); */
+        padding: 10px 0;
+      }
+      .main {
+        position: relative;
+        background: url("./images/blog-ban.png") center center / cover no-repeat;
+        min-height: 400px;
+        height: auto;
+        color: white;
+        z-index: 1;
+      }
+
+      .main::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(
+          6,
+          48,
+          83,
+          0.58
+        ); /* Solid overlay (black with 50% opacity) */
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+     <!-- Top Bar -->
+     <div class="main">
+        <div class="container-fluid top-bar bg-overlay">
+          <div
+            class="container d-flex justify-content-between align-items-center"
+          >
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope me-2"></i>
+              <span class="me-4"
+                >Email us at : <strong>example@mail.com</strong></span
+              >
+              <i class="fas fa-phone me-2"></i>
+              <span>123-4567 890</span>
+            </div>
+            <div class="social-icons d-none d-md-block">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-dribbble"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-behance"></i>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-overlay py-3">
+          <div class="container">
+            <a
+              class="navbar-brand logo text-white d-flex align-items-center"
+              href="#"
+            >
+              <i class="fas fa-city me-2"></i><span>City</span
+              ><span class="ms-1">Light</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navMenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Agents</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Properties</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <a href="#" class="btn btn-outline-light me-2">Add Listing</a>
+                <a href="#"
+                  ><i class="fas fa-user-circle fa-lg text-white"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="main-content d-flex justify-content-center align-items-center text-center"
+        >
+          <div>
+            <h2>Blog</h2>
+            <p>Home /about us</p>
+          </div>
+        </div>
+      </div>
+
+
+    
+    <section class="py-5 bg-dark text-white">
+        <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row text-center text-md-start gap-4">
+          <div>
+            <h3 class="fw-bold mb-2">Need Help? Talk To Our Expert.</h3>
+            <p class="mb-0 fs-5">Talk To Our Experts Or Browse Through More Properties.</p>
+          </div>
+          <div>
+            <a href="#" class="btn btn-outline-light px-4 py-2 rounded-pill fw-semibold">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-md-4 mb-4">
+            <div class="footer-logo">
+              City <i class="fas fa-building"></i>ight
+            </div>
+            <p class="mt-3">
+              Lorem ipsum dolor sit amet consectetur. Molestie ornarevelit sedac
+              vel blandit. At venenatis mol estie sed nec nisieget. Telluslac.
+            </p>
+            <div class="mt-4">
+              <h6>Contact Us</h6>
+              <p>13 A Lorem ipsum road, Bangalore<br />lorem ipsum</p>
+              <p>
+                <strong>Phone:</strong> +91 6289430xxx<br />
+                <strong>Fax:</strong> +91 6289430xxx<br />
+                <strong>Email:</strong> websitename@gmail.com<br />
+                <strong>Website:</strong> www.homedecor.com
+              </p>
+            </div>
+          </div>
+
+          <!-- Newsletter + Menus -->
+          <div class="col-md-8">
+            <div class="row">
+              <!-- Newsletter -->
+              <div class="col-md-12 mb-4">
+                <form class="d-flex">
+                  <input
+                    type="email"
+                    class="form-control me-2 subscribe-input"
+                    placeholder="Enter Your Email"
+                  />
+                  <button class="btn btn-dark subscribe-btn">Subscribe</button>
+                </form>
+              </div>
+
+              <!-- Menus -->
+              <div class="col-md-3 footer-section mb-4">
+                <h5>Our Service</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Interior Design</a></li>
+                  <li><a href="#">Exerior Design</a></li>
+                  <li><a href="#">Lightning Design</a></li>
+                  <li><a href="#">Interior Design</a></li>
+                  <li><a href="#">Interior Design</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 footer-section mb-4">
+                <h5>Company</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Review</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 footer-section mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Warrenty</a></li>
+                  <li><a href="#">Trade Partners</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 footer-section mb-4">
+                <h5>Get In Touch</h5>
+                <div class="social-icons mb-3">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <h5>Download The App</h5>
+                <div class="app-download">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    width="140"
+                    alt="Google Play"
+                  />
+                  <img
+                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    width="140"
+                    alt="App Store"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div
+        class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div>
+          Copyright 2024 City <i class="fas fa-building"></i>ight. All rights
+          reserved
+        </div>
+        <div>
+          <a href="#" class="me-2">Privacy</a>·
+          <a href="#" class="mx-2">Terms</a>·
+          <a href="#" class="ms-2">Sitemap</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bootstrap/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

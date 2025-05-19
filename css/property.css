@@ -1,0 +1,271 @@
+.custom-container {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+.px-custom {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+@media (max-width: 767px) {
+  .circle-text{
+    padding-top: 150px ;
+    padding-bottom: 150px;
+  }
+  
+ 
+ 
+ 
+}
+
+@media (max-width: 768px) {
+  .px-custom {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.nav-bar {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+.nav-link {
+  padding-right: 30px !important;
+  padding-left: 20px;
+  font-size: 14px !important;
+}
+.person {
+  border-radius: 50px !important;
+  border: 1px solid black !important;
+}
+.role {
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  margin-right: 10px !important;
+}
+.role1 {
+  border-top-right-radius: 8px !important;
+}
+.role2 {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+.role3 {
+  border-top-left-radius: 8px !important;
+}
+.cmnt-text{
+  color: #606060;
+  font-size: 13px;
+}
+
+.top-bar {
+  background: #dff1ff;
+  font-size: 14px;
+  padding-top: 27px !important;
+  padding-bottom: 27px !important;
+}
+.social-icons a {
+  color: black;
+  margin-left: 10px;
+}
+.property-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+.property-meta i {
+  margin-right: 5px;
+}
+.property-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* prop img */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-row {
+  padding-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  .gallery-row {
+    height: 600px; /* Set your desired row height here */
+  }
+}
+@media (min-width: 1199px) {
+ .circle-text{
+ 
+ }
+}
+
+.h-50 {
+  height: 50%;
+}
+
+/*  */
+.sticky-agent {
+  position: sticky;
+  top: 20px;
+}
+.card-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+.circle-text {
+  padding-top: 185px ;
+  padding-bottom: 130px ;
+}
+
+.circle-container {
+  background-image: url("../images/circle.png");
+
+  /* max-width: 100%; */
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.circle-container span {
+  font-size: 24px;
+  font-weight: bold;
+}
+input,
+textarea {
+  border: 1px solid #007bff;
+}
+/* h2::after{
+    content: "";
+    width: 15%;
+    height: 10px;
+    background-color: maroon;
+    position: absolute;
+    bottom: -5px;
+    box-shadow: 0 10px 0 yellow;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.legend-box {
+      display: inline-block;
+      width: 20px;
+      height: 4px;
+      /* border-radius: 10px; */
+    }
+
+    .legend-1 {
+      background-color: #2e6be6;
+    }
+
+    .legend-2 {
+      background-color: #98b9e3;
+    }
+
+    .legend-3 {
+      background-color: #0057e7;
+    }
+
+/* neighbour ood data */
+
+.rating-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid #007bff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.rating-circle::after {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 50%;
+}
+
+.rating-icon {
+  position: relative;
+  font-size: 24px;
+  z-index: 1;
+  color: #007bff;
+}
+.collage {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.contact-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+}
+
+.comment {
+  /* border-top: 1px solid #ddd; */
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.form-control,
+.btn {
+  border-radius: 8px;
+}
+
+.stars {
+  color: gold;
+}
+
+/* footer */
+.footer {
+  background-color: #fff;
+  color: #000;
+  padding: 60px 20px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer .footer-logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.footer .footer-section h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  background: #000;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #000;
+}
+
+.subscribe-input {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.subscribe-btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
