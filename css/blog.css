@@ -1,3 +1,22 @@
+/* temp */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Arima:wght@100..700&family=Arizonia&family=Bebas+Neue&family=Birthstone+Bounce:wght@400;500&family=Charmonman:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ribeye+Marrow&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Water+Brush&display=swap");
+
+      /*  font-family: "Inter", sans-serif; */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary: #187cff;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
 .footer {
     background-color: #fff;
     color: #000;
@@ -38,11 +57,11 @@
   }
   
   .subscribe-input {
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 8px 0 0 8px;
   }
   
   .subscribe-btn {
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 8px 8px 0;
   }
   
   @media (max-width: 768px) {
@@ -63,9 +82,15 @@
   }
   .article-card p {
     font-size: 12px;
-    text-transform: uppercase;
+    text-transform: capitalize !important;
     margin-bottom: 5px;
     color: gray;
+  }
+  .active{
+    color: var(--primary) !important;
+  }
+  .nav-link:hover{
+    color: var(--primary) !important;
   }
   .article-card h5 {
     font-size: 16px;
@@ -84,6 +109,14 @@
   }
   .tag-but {
   }
+  .list ul{
+    padding-left: 0px !important;
+  }
+  .top-logo img{
+    width: 40px !important;
+    height: 40px;
+
+}
 
   .main {
     /* border-radius: 10px; */
@@ -120,7 +153,7 @@
   }
 
   .article-title {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
   }
 
@@ -141,7 +174,7 @@
   .navbar-dark .navbar-nav .nav-link {
     color: #fff;
     font-weight: 500;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 
   .social-icons i {
@@ -204,4 +237,106 @@
 .person {
   border-radius: 50px !important;
   border: 1px solid black !important;
+}
+/* footer */
+.footer {
+  background-color: #fff;
+  color: #000;
+  padding-top: 60px;
+  font-family: 'Segoe UI', sans-serif;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.foot-logo img{
+
+max-width: 82px !important;
+/* height: 35px; */
+  width: 100%;
+}
+.logo-black1 img{
+  
+    max-width: 190px;
+    width: 100%;
+
+}
+
+.footer .footer-logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+.footer-logo{
+  max-width: 170px;
+  width: 100%;
+}
+
+.footer .footer-section h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  background: #000;
+  color: #fff;
+  padding: 15px 0px ;
+  font-size: 14px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #000;
+}
+.foot-para{
+  margin-bottom: 30px !important;
+}
+
+.subscribe-input {
+  border-radius: 8px 0 0 8px;
+}
+
+.subscribe-btn {
+  border-radius: 0 8px 8px 0;
+}
+.app-logo{
+  max-width: 172px !important;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .foot-play img {
+    max-width: 120px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .foot-app img {
+    max-width: 120px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px !important;
+  }
+  .help-contact{
+    margin-bottom: 30px;
+  }
+  .trusted-logos img{
+    max-width: 95px;
+    width: 100%;
+    max-height: 40px;
+  }
+  
+}
+
+.foot-logo img{
+
+max-width: 82px !important;
+/* height: 35px; */
+  width: 100%;
 }
