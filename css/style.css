@@ -46,6 +46,17 @@
     color: var(--primary);
 
   }
+  @media screen and (min-width: 320px) and (max-width:767px) {
+        .ban-content {
+          padding-bottom: 10px;
+        }
+      }
+      @media screen and (min-width: 320px) and (max-width:488px) {
+         .hero-section .content h1 {
+          font-size: 25px;
+        }
+        
+      }
 
   /* hero */
 
@@ -124,7 +135,7 @@
   
   @media (max-width: 991.98px) {
     .navbar-collapse {
-      background: rgba(0, 0, 0,0.5);
+      background: rgba(0, 0, 0,0.7);
       padding: 16px;
       border-radius: 10px;
       position: absolute;

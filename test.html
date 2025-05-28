@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./bootstrap/bootstrap-5.3.5-dist/css/bootstrap.min.css"
+    />
+
+    <!-- font-awsome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .hero-section {
+        background: url("../images/hero-img.png") center/cover no-repeat;
+
+        z-index: 1;
+
+        min-height: 100vh;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .hero-section .content {
+        /* background: rgba(0, 0, 0, 0.5); */
+        padding: 32px;
+        border-radius: 16px;
+      }
+      @media (max-width: 575px) {
+        .hero-section .content h1 {
+          font-size: 32px;
+        }
+      }
+      @media (max-width: 489px) {
+        .hero-section .content p {
+          font-size: 14px;
+        }
+      }
+      .content {
+        background: none !important;
+        border: none !important;
+      }
+      @media screen and (max-width: 1399px) {
+        .ban-content {
+          padding-bottom: 110px;
+        }
+      }
+       @media screen and (min-width: 320px) and (max-width:767px) {
+        .ban-content {
+          padding-bottom: 0px;
+        }
+      }
+      @media screen and (min-width: 320px) and (max-width:488px) {
+         .hero-section .content h1 {
+          font-size: 25px;
+        }
+        
+      }
+      .main_head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .custom-container{
+    max-width: 1390px;
+  }
+  .px-custom {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (max-width: 768px) {
+    .px-custom {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+   .topbar {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    font-size: 14px;
+    padding: 25px 0px !important;
+  }
+   @media (max-width: 767px) {
+   
+    .topbar {
+      flex-direction: column;
+      text-align: center;
+      gap: 5px;
+    }
+  }
+  .social-icons a {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #000;
+}
+.navbar-nav {
+    align-items: flex-start !important;
+  }
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      background: rgba(0, 0, 0,0.5);
+      padding: 16px;
+      border-radius: 10px;
+      position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 16px;
+        align-items: flex-start !important;
+        text-align: left;
+    }
+   
+
+
+    .navbar-nav .nav-link {
+      color: rgb(255, 255, 255) !important;
+      text-align: left;
+    }
+
+  
+  }
+  @media (max-width: 991px) {
+   
+    .navbar-collapse {
+      text-align: center;
+    }
+   
+  }
+   @media (max-width: 489px) {
+    .navbar-brand span {
+      font-size: 19px;
+    }
+    
+  }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header class="main_head container custom-container px-custom">
+      <!-- Topbar -->
+      <div
+        class="topbar d-flex justify-content-between align-items-center px-3 py-2 text-white"
+      >
+        <div>
+          <i class="fa-regular fa-envelope"></i>
+          <strong>Email us at:</strong> example@mail.com
+          <i class="fa-solid fa-phone ps-5"></i> 123-4567 890
+        </div>
+
+        <div class="social-icons d-none d-md-flex gap-4">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-dribbble"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-behance"></i>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./images/logo-white.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav-bar justify-content-end ps-4"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3 navbar ps-4 text-start text-white">
+            <li class="nav-item">
+              <a class="nav-link home" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link about text-white" href="./aboutus.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white agent" href="./agent.html"
+                >Our Agents</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white property" href="./properties.html"
+                >Properties</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white blog" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white contact" href="./contactus.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex align-items-center ps-3">
+            <a href="" class="top-logo">
+              <img src="./images/farha.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- <div class="d-flex gap-3">
+        <a class="btn btn-outline-light">Add Listing</a>
+        <i class="fa-solid fa-user fs-5 text-white"></i>
+      </div> -->
+      </nav>
+    </header>
+   <main>
+     <section
+      class="hero-section text-white text-center d-flex align-items-end justify-content-center img-fluid"
+    >
+      <div class="content">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="ban-content">
+            <p class="text-uppercase small">The best way to</p>
+            <h1 class="fw-bold display-5">Find your future home</h1>
+            <p>We’ve more than 745,000 apartments, place & plot.</p>
+          </div>
+        </div>
+
+        <!-- Search Box -->
+        <div>
+          <div>
+            <ul
+              class="nav nav-tabs justify-content-start rounded-top tab-container"
+            >
+              <li class="nav-item tab">
+                <a
+                  class="nav-link active sell"
+                  id="for-sell"
+                  data-bs-toggle="tab"
+                  href="#sell"
+                  >For Sell</a
+                >
+              </li>
+              <li class="nav-item tab">
+                <a
+                  class="nav-link buy"
+                  data-bs-toggle="tab"
+                  id="for-buy"
+                  href="#buy"
+                  >For Buy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="search-box bg-white text-dark p-3 rounded-4 shadow-lg form"
+          >
+            <div class="row g-2">
+              <div class="col-md">
+                <select class="form-select category custom-input">
+                  <option>Property Category</option>
+                  <option>Apartment</option>
+                  <option>House</option>
+                  <option>Villa</option>
+                  <option>Industrial</option>
+                  <option>Office</option>
+                  <option>Retails</option>
+                  <option>Land</option>
+                  <option>Codons</option>
+                </select>
+              </div>
+              <div class="col-md">
+                <select class="form-select">
+                  <option>Property City</option>
+                  <option>Kolkata</option>
+                  <option>Delhi</option>
+                  <option>Hydrabad</option>
+                  <option>Mumbai</option>
+                  <option>Goa</option>
+                  <option>Pune</option>
+                  <option>Bangalore</option>
+                  <option>delhi</option>
+                </select>
+              </div>
+              <div class="col-md">
+                <select class="form-select">
+                  <option>Price</option>
+                  <option>1 lakh</option>
+                  <option>2 lakh</option>
+                  <option>3 lakh</option>
+                  <option>4 lakh</option>
+                  <option>5 lakh</option>
+                  <option>6 lakh</option>
+                  <option>7 lakh</option>
+                </select>
+              </div>
+              <div class="col-md">
+                <a
+                  class="btn btn-outline-secondary w-100 advance-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#filterModal"
+                >
+                  Advanced Search
+                </a>
+              </div>
+              <div class="col-md">
+                <a class="btn btn-primary w-100 hero-search button-common">
+                  Search <i class="fa fa-search"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </main>
+  </body>
+</html>
