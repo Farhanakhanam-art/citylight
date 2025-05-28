@@ -35,6 +35,12 @@ img {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .topbar{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+    max-width: 100% !important;
+  }
 }
 .button-common:hover {
   background-color: white;
@@ -286,6 +292,15 @@ img {
   .hero-section .content p {
     font-size: 15px;
   }
+  .download-on-the-app-store{
+    .download-on-the-app-store {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center !important;
+        gap: 0.3rem;
+      }
+  }
+
 }
 
 /* section2 */
