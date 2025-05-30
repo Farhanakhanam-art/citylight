@@ -35,7 +35,7 @@ img {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .topbar{
+  .topbar {
     display: flex !important;
     flex-direction: row;
     justify-content: space-between !important;
@@ -127,7 +127,10 @@ img {
 .navbar-nav {
   align-items: flex-start !important;
 }
-@media screen and (max-width: 1399px) {
+@media screen and(min-width:1200px) and (max-width: 1600px) {
+  .property-btn {
+    padding: 10px 20px !important;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -145,7 +148,7 @@ img {
     text-align: left;
   }
   .property-btn {
-    padding: 6px 20px !important;
+    padding: 6px 20px;
   }
   .img1 {
     padding-bottom: 22px;
@@ -230,7 +233,7 @@ img {
   /* padding: 10px 20px !important;  */
 }
 
-/* === MEDIA QUERIES === */
+
 @media screen and (max-width: 1399px) {
   .search-box {
     max-width: 900px !important;
@@ -243,12 +246,12 @@ img {
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .search-box {
     max-width: 750px;
   }
   .property-btn {
-    padding: 6px 20px !important;
+    padding: 0px 0px !important;
   }
 }
 
@@ -260,7 +263,7 @@ img {
     text-align: center;
   }
   .property-btn {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
   }
 }
 
@@ -292,15 +295,12 @@ img {
   .hero-section .content p {
     font-size: 15px;
   }
-  .download-on-the-app-store{
-    .download-on-the-app-store {
-        flex-direction: column !important;
-        justify-content: center;
-        align-items: center !important;
-        gap: 0.3rem;
-      }
+  .download-on-the-app-store {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center !important;
+    gap: 0.3rem;
   }
-
 }
 
 /* section2 */
@@ -313,7 +313,7 @@ img {
   gap: 12px;
   /* dekbo */
   transition: all 0.3s ease;
-  
+
   width: 170px;
   display: flex;
   align-items: center;
@@ -849,7 +849,7 @@ img {
   overflow: hidden;
   min-height: 580px;
   height: 100%;
-  /* aspect-ratio: 3 / 4; */
+  
   padding: 0px !important;
   border: none;
 }
@@ -1518,8 +1518,8 @@ input[type="range"] {
   margin-top: 4px;
   color: #505050;
 }
-.property-btn {
-  padding: 10px 40px !important;
+.btn {
+  padding: 0px 0px !important;
 }
 .logo-black1 img {
   /* height: 42px;  
